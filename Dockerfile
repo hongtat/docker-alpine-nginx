@@ -52,6 +52,7 @@ RUN     \
         if [ ! -z "$HTTP_PROXY" ]; then \
             export http_proxy=${HTTP_PROXY}; \
         fi \
+        && \
         if [ ! -z "$HTTPS_PROXY" ]; then \
             export https_proxy=${HTTPS_PROXY}; \
         fi \
@@ -154,6 +155,7 @@ RUN     \
         if [ ! -z "$HTTP_PROXY" ]; then \
             export http_proxy=${HTTP_PROXY}; \
         fi \
+        && \
         if [ ! -z "$HTTPS_PROXY" ]; then \
             export https_proxy=${HTTPS_PROXY}; \
         fi \
